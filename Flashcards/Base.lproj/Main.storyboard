@@ -43,6 +43,17 @@
                                     <outletCollection property="gestureRecognizers" destination="dvM-9x-ni5" appends="YES" id="QlL-As-Xxw"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuP-dN-lgz">
+                                <rect key="frame" x="185" y="777" width="55" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="vau-0T-Blb" kind="presentation" id="5jC-9k-C7a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,6 +71,76 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="85.714285714285708"/>
+        </scene>
+        <!--Creation View Controller-->
+        <scene sceneID="7SB-Ed-RX2">
+            <objects>
+                <viewController id="yqJ-Ti-FQr" customClass="CreationViewController" customModule="Flashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gc4-1V-Ucn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5u-wi-Owz">
+                                <rect key="frame" x="76" y="224" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="questionTextField:" destination="mAN-qQ-Yeq" eventType="editingDidEnd" id="unE-KU-7HB"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaJ-Q8-iCn">
+                                <rect key="frame" x="76" y="299" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="answerTextField:" destination="mAN-qQ-Yeq" eventType="editingDidEnd" id="ylV-Wf-daF"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3bh-Fi-cNC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YaJ-4q-yyx">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="7Be-I7-sxI">
+                            <connections>
+                                <action selector="didTapOnCancel:" destination="yqJ-Ti-FQr" id="3Dt-Dp-Adl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="q0k-7e-N2M">
+                            <connections>
+                                <action selector="didTapOnDone:" destination="yqJ-Ti-FQr" id="Ydt-YQ-dcC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerTextField" destination="UaJ-Q8-iCn" id="viV-Dk-50I"/>
+                        <outlet property="questionTextField" destination="B5u-wi-Owz" id="YOu-P2-hNB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JRp-tb-Eau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="mAN-qQ-Yeq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1679.7101449275362" y="96.428571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sl9-yU-2zD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vau-0T-Blb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="722-Sk-Dyt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yqJ-Ti-FQr" kind="relationship" relationship="rootViewController" id="JkU-zo-GNt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5H-yo-UeQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769.56521739130437" y="96.428571428571431"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA2AA0128EBF508007D56ED /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2AA0028EBF508007D56ED /* CreationViewController.swift */; };
 		0ACD0FCB28D90B1700546036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD0FCA28D90B1700546036 /* AppDelegate.swift */; };
 		0ACD0FCD28D90B1700546036 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD0FCC28D90B1700546036 /* SceneDelegate.swift */; };
 		0ACD0FCF28D90B1700546036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACD0FCE28D90B1700546036 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA2AA0028EBF508007D56ED /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		0ACD0FC728D90B1700546036 /* Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACD0FCA28D90B1700546036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACD0FCC28D90B1700546036 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				0ACD0FCC28D90B1700546036 /* SceneDelegate.swift */,
 				0ACD0FCE28D90B1700546036 /* ViewController.swift */,
 				0ACD0FD028D90B1700546036 /* Main.storyboard */,
+				0AA2AA0028EBF508007D56ED /* CreationViewController.swift */,
 				0ACD0FD328D90B1A00546036 /* Assets.xcassets */,
 				0ACD0FD528D90B1A00546036 /* LaunchScreen.storyboard */,
 				0ACD0FD828D90B1A00546036 /* Info.plist */,
@@ -261,6 +264,7 @@
 				0ACD0FCF28D90B1700546036 /* ViewController.swift in Sources */,
 				0ACD0FCB28D90B1700546036 /* AppDelegate.swift in Sources */,
 				0ACD0FCD28D90B1700546036 /* SceneDelegate.swift in Sources */,
+				0AA2AA0128EBF508007D56ED /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 934DVWR87S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flashcards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +449,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 934DVWR87S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Flashcards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -471,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
