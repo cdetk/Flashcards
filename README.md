@@ -1,14 +1,46 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2636
+<<<<<<< HEAD
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AppleColorEmoji;\f1\fmodern\fcharset0 Courier;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
+=======
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+>>>>>>> b4696bd (Lab 3 October 10)
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \deftab720
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+<<<<<<< HEAD
 \uc0\u55357 \u56541 
 \f1  `NOTE` Paste this template at the top of your existing `README.md` file from the last lab.\
+=======
+\
+## Lab 3\
+\
+### App Description\
+`TODO://` Prev and Next buttons, storage of data\
+\
+### App Walk-though\
+<img src="https://imgur.com/a/rqo9Nvs.gif\'94 width=200><br>\
+\
+\
+## Required\
+- [x] User can browse through multiple flashcards\
+- [x] User can re-open the app and see previously created flashcards\
+- [x] Push code to GitHub\
+## Optional\
+- [ ] User can delete a flashcard\
+- [ ] User can edit existing flashcard\
+- [ ] User can store multiple choice questions
+\f1 \
+\
+\
+\uc0\u55357 \u56541 
+\f0  `NOTE` Paste this template at the top of your existing `README.md` file from the last lab.\
+>>>>>>> b4696bd (Lab 3 October 10)
 \
 ## Lab 2\
 \
